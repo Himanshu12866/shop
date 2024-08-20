@@ -8,8 +8,6 @@ div{
 }
 img{
     width: 300px;
-
-
 }
 
 @keyframes rotate {
@@ -29,3 +27,9 @@ img{
     transform:rotate(360deg);
   }
 }
+
+.before{
+    background-color: black;
+}
+.Click{
+   background-color: red ; }
