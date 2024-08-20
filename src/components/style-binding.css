@@ -8,13 +8,10 @@ div{
 }
 img{
     width: 300px;
-    animation: rotate 3s linear infinite;
-    transition: .3s;
+
 
 }
-img:hover{
-    animation:onHover .6s alternate infinite;
-}
+
 @keyframes rotate {
     form{
         transform: rotate(0deg);
@@ -26,9 +23,9 @@ img:hover{
 }
 @keyframes onHover {
   form{
-    transform: scale(1) rotate(0deg);
+    transform:rotate(0deg);
   }
   to{
-    transform: scale(1.5) rotate(360deg);
+    transform:rotate(360deg);
   }
 }
