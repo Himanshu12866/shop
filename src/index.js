@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ClassBinding from './components/class-binding';
+// import ClassBinding from './components/class-binding';
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import HoverImg from './components/iphone-hover';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <ClassBinding /> */}
+    <HoverImg />
   </React.StrictMode>
 );
 
