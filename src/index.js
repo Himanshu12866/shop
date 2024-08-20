@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 // import HoverImg from './components/iphone-hover';
-import StyleBind from './components/style-binding';
+// import StyleBind from './components/style-binding';
+import EMIcalculator from './components/emi-calculator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,8 @@ root.render(
     {/* <App /> */}
     {/* <ClassBinding /> */}
     {/* <HoverImg /> */}
-    <StyleBind />
+    {/* <StyleBind /> */}
+    <EMIcalculator />
   </React.StrictMode>
 );
 
