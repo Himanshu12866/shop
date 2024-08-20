@@ -64,11 +64,25 @@ export default function HoverImg() {
                 <div className="col-4">
                     <img style={{ width: "100%" }} src={newImg} alt="nameimage"></img>
                 </div>
-                <div className="col-7">
+                <div className="col-7 mt-4">
                     <h3>{
                         data.title
                     }</h3>
-                   <h4> &#8377; {data.price.toLocaleString()}</h4>
+                    <h4> &#8377; {data.price.toLocaleString()}</h4>
+
+                    <p className="badge bg-primary">
+                        <span className="bi bi-star-fill"> {data.rating.rate} </span>
+                    </p>
+                    <span> {data.rating.ratings.toLocaleString()} Ratings and {data.rating.reviews.toLocaleString()} Reviews</span>
+                    <p className="fw-bold">Available Offers</p>
+                    <div>
+                        {
+                            data.offers.map((offer, index) =>
+                                <p><span className="bi bi-tag-fill fs-5 text-primary"></span>{offer}</p>
+                            )
+                        }
+                    </div>
+
 
                 </div>
             </div>
