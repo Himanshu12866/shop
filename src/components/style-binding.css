@@ -1,0 +1,34 @@
+div{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 300px;
+    animation: rotate 3s linear infinite;
+    transition: .3s;
+
+}
+img:hover{
+    animation:onHover .6s alternate infinite;
+}
+@keyframes rotate {
+    form{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes onHover {
+  form{
+    transform: scale(1) rotate(0deg);
+  }
+  to{
+    transform: scale(1.5) rotate(360deg);
+  }
+}

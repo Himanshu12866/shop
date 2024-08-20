@@ -6,14 +6,16 @@ import reportWebVitals from './reportWebVitals';
 // import ClassBinding from './components/class-binding';
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
-import HoverImg from './components/iphone-hover';
+// import HoverImg from './components/iphone-hover';
+import StyleBind from './components/style-binding';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <ClassBinding /> */}
-    <HoverImg />
+    {/* <HoverImg /> */}
+    <StyleBind />
   </React.StrictMode>
 );
 
