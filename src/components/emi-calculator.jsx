@@ -20,9 +20,10 @@ export default function EMIcalculator() {
     const [emi, setEmi] = useState(0)
     function emiPM(e) {
         if (amount < 100000) {
-            alert("Please enter a valid amount")
+            setAmount(100000)
         } else if (amount > 1000000) {
             alert("Please enter a valid amount")
+            setAmount(1000000)
         }
         else {
             let p = amount;
