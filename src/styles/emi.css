@@ -1,47 +1,45 @@
+.w-100 {
+  background-image: linear-gradient(
+      rgba(208, 208, 208, 0.447),
+      rgba(235, 225, 225, 0.566)
+    ),
+    url(../../public/emi1.webp);
+  background-size: cover;
+  background-position: center;
+}
+.row {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
 
-.w-100{
-    background-image:linear-gradient(rgba(208, 208, 208, 0.447) ,rgba(235, 225, 225, 0.566)) , url(../../public/emi1.webp);
-    background-size: cover;
-    background-position: center;
-    
-    
-
+  color: white !important;
+  backdrop-filter: blur(5px);
+  max-height: 100vh;
 }
-.row{
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0);
-    text-align: center;
-    
-    color: white !important;
-    backdrop-filter: blur(5px) ;
-    max-height: 100vh;
-    
+tr td {
+  text-align: left;
 }
-tr  td{
-    text-align: left;
+input {
+  color: white !important;
+  background-color: transparent !important;
 }
-input{
-     color: white !important;
-    background-color:transparent !important;
+.modal-content {
+  background-color: transparent !important;
+  color: white;
+  /* background-image: url("../../public/emi.jpg"); */
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
 }
-.modal-content{
-    background-color: transparent !important;
-    color: white;
-    /* background-image: url("../../public/emi.jpg"); */
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(10px);
-    
+.modal-header {
+  backdrop-filter: blur(10px);
 }
-.modal-header{
-    backdrop-filter: blur(10px);
+.modal-body {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px) contrast(1);
+  color: white;
 }
-.modal-body{
-    background-color: transparent !important;
-    backdrop-filter: blur(10px) contrast(1);
-    color: white;
-}
-table tbody tr td{
-    background-color: transparent !important;
-    color: white !important;
+table tbody tr td {
+  background-color: transparent !important;
+  color: white !important;
 }
