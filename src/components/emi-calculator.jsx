@@ -33,7 +33,7 @@ export default function EMIcalculator() {
 
             <div className="row p-3">
                 <h1>Personal EMI Calculator</h1>
-                <div className="col-4">
+                <div className="col-lg-4 col-sm-12">
                     <label className="form-label fw-bold">Amount You Need :</label>
                     <input className="form-control" type="number" onChange={ChnageAmount} value={amount}></input>
                     <div className="d-flex justify-content-between my-2">
@@ -45,7 +45,7 @@ export default function EMIcalculator() {
                     </div>
 
                 </div>
-                <div className="col-4">
+                <div className="col-lg-4 col-sm-12">
                     <label className="form-label fw-bold">For Years :</label>
                     <input className="form-control" type="number" onChange={ChangeYear} value={year} ></input>
                     <div className="d-flex justify-content-between my-2">
@@ -56,7 +56,7 @@ export default function EMIcalculator() {
                         <input type="range" onChange={ChangeYear} className="form-range" value={year} min={1} max={5} />
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-lg-4 col-sm-12">
                     <label className="form-label fw-bold">Interest Rate :</label>
                     <input className="form-control" value={rate} onChange={ChangeRate}></input>
                     <div className="d-flex justify-content-between my-2">
@@ -68,33 +68,35 @@ export default function EMIcalculator() {
                     </div>
                 </div>
                 <button onClick={emiPM} data-bs-target="#modalId" data-bs-toggle="modal" className="btn btn-dark">Calculate</button>
-                <div className="modal fade" id="modalId">
+               
+            </div>
+            <div className="modal fade" id="modalId">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="modal-header">
                                 <h1>Your EMI Result</h1>
-                                <button className="btn btn-close" data-bs-dismiss="modal"></button>
+                                <button className="btn btn-close bg-warning" data-bs-dismiss="modal"></button>
                             </div>
                             <div className="modal-body">
                                 <table className="table table-hover">
                                     <tbody>
                                         <tr className="fw-bold">
-                                            <td>Amount <sapn className="bi bi-currency-rupee"></sapn>: </td>
-                                            <td>{amount.toLocaleString('en-in', { style: "currency", currency: "INR" })}</td>
+                                            <td>Amount <sapn className="bi bi-currency-rupee"></sapn> </td>
+                                            <td> : {amount.toLocaleString('en-in', { style: "currency", currency: "INR" })}</td>
                                         </tr>
                                         <tr className="fw-bold">
-                                            <td> Years <span className="bi bi-clock"></span> : </td>
-                                            <td>{year} Yr</td>
+                                            <td> Years <span className="bi bi-clock"></span> </td>
+                                            <td> : {year} Yr</td>
                                         </tr>
                                         <tr className="fw-bold">
-                                            <td>Interest Rate <span className="bi bi-percent"></span>: </td>
+                                            <td>Interest Rate <span className="bi bi-percent"></span> </td>
                                             <td>
-                                                {rate} %
+                                               : {rate} %
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>EMI/M  <span className="bi bi-stack"></span>:</td>
-                                            <td className="fw-bold">{emi}</td>
+                                        <tr className="fw-bold">
+                                            <td>EMI/Month  <span className="bi bi-stack"></span></td>
+                                            <td> : {emi}</td>
                                         </tr>
                                     </tbody>
 
@@ -106,7 +108,6 @@ export default function EMIcalculator() {
                     </div>
 
                 </div>
-            </div>
         </div>
     )
 }
