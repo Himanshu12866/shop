@@ -9,8 +9,8 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 // import HoverImg from './components/iphone-hover';
 // import StyleBind from './components/style-binding';
-// import EMIcalculator from './components/emi-calculator';
-import OverLay from './components/overlay';
+import EMIcalculator from './components/emi-calculator';
+// import OverLay from './components/overlay';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,8 +19,8 @@ root.render(
     {/* <ClassBinding /> */}
     {/* <HoverImg /> */}
     {/* <StyleBind /> */}
-    {/* <EMIcalculator /> */}
-    <OverLay />
+    <EMIcalculator />
+    {/* <OverLay /> */}
   </React.StrictMode>
 );
 reportWebVitals();
